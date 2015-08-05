@@ -1,0 +1,34 @@
+// Base
+// ----------------------------------------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+
+}
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+
+a         { color: #1abc9c; text-decoration: none; font-weight: 700; }
+a:hover   { text-decoration: underline; }
+
+  // Utility
+
+.wrap:before,
+.wrap:after { content:""; display:table; }
+.wrap:after { clear: both; }
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  zoom: 1;
+}

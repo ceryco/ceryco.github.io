@@ -1,0 +1,103 @@
+// Temp Landing Page Styles
+// ----------------------------------------------------------
+
+.temp_lp {
+
+  .wrap {
+
+    z-index:1;
+
+  }
+
+  .tp-dottedoverlay {
+
+    background: url("../assets/lp_header/gridtile.png");
+
+    background-repeat: repeat;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    z-index: 1;
+    opacity: 0.8;
+
+  }
+
+  .head-content {
+
+    color: #fff;
+
+    border-bottom: 1px solid #ddd;
+
+    border-bottom: 1px solid #ddd;
+
+    box-shadow: 0 3px 2px -2px rgba(200,200,200,0.2);
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #273647;
+
+    // IE10 Consumer Preview
+    background-image: -ms-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
+    // Mozilla Firefox
+    background-image: -moz-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
+    // Opera
+    background-image: -o-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
+    // Webkit (Safari/Chrome 10)
+    background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #2F4358), color-stop(1, #263648));
+    // Webkit (Chrome 11+)
+    background-image: -webkit-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
+    // W3C Markup, IE10 Release Preview
+    background-image: radial-gradient(circle farthest-side at center, #2F4358 0%, #263648 100%);
+
+    background-image: url('../assets/lp_header/lp_background.jpg');
+
+    background-repeat: no-repeat;
+
+    background-position: center top;
+
+    height: 100vh;
+
+  }
+
+}
+
+.temp_lp_content {
+
+  .description {
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 0px;
+    font-size: 56px;
+    font-weight: bolder;
+    line-height:1;
+    margin-bottom:1rem;
+  }
+
+  .small {
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+
+  a { color: #fff; }
+
+}
