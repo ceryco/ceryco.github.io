@@ -10,16 +10,16 @@ html, body { height: 100%; }
 
 body {
 
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: #000;
+  line-height: 28px;
+  color: #727272;
 
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-size: 1rem; font-weight: 400; }
 
-a         { color: #1abc9c; text-decoration: none; font-weight: 700; }
+a         { text-decoration: none; }
 a:hover   { text-decoration: underline; }
 
   // Utility
@@ -31,4 +31,29 @@ a:hover   { text-decoration: underline; }
   max-width: 800px;
   margin: 0 auto;
   zoom: 1;
+}
+
+
+
+
+/*
+    these are just the default styles used in the Cycle2 demo pages.
+    you can use these styles or any others that you wish.
+*/
+
+
+
+.cycle-slideshow { height:55px; width: 100%; margin: 10px auto; padding: 0; position: relative; }
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img {
+  /*
+  some of these styles will be set by the plugin (by default) but setting them here
+  helps avoid flash-of-unstyled-content
+  */
+
+  width: 500px;
+  height: auto;
+  padding-right:40px;
+
 }

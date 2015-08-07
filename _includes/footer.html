@@ -1,0 +1,34 @@
+
+
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+<script type='text/javascript' src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.carousel.min.js'></script>
+<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
+<script type='text/javascript' src="//cdn.rawgit.com/Yappli/smooth-scroll/main/smooth-scroll.min.js"></script>
+
+<script type="text/javascript">
+
+    function init() {
+        window.addEventListener('scroll', function(e) {
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 400,
+                    header = document.querySelector("nav");
+
+            if (distanceY > shrinkOn) {
+                classie.remove(header, "nav-big");
+            } else {
+                if (!classie.has(header, "nav-big")) {
+                    classie.add(header, "nav-big");
+                }
+            }
+
+        });
+    }
+
+    window.onload = init();
+
+    skrollr.init();
+
+</script>

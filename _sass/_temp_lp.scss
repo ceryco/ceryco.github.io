@@ -3,101 +3,147 @@
 
 .temp_lp {
 
-  .wrap {
+    .wrap {
 
-    z-index:1;
+      z-index:1;
 
-  }
+    }
 
-  .tp-dottedoverlay {
+    .tp-dottedoverlay {
 
-    background: url("../assets/lp_header/gridtile.png");
+      background: url("../assets/lp_header/gridtile.png");
 
-    background-repeat: repeat;
+      background-repeat: repeat;
 
-    width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
 
-    position: absolute;
+      position: absolute;
 
-    top: 0px;
-    left: 0px;
+      top: 0px;
+      left: 0px;
 
-    z-index: 1;
-    opacity: 0.8;
+      z-index: 1;
 
-  }
+    }
 
-  .head-content {
+    .head-content {
 
-    color: #fff;
+      font-family: 'Lato', Helvetica, Arial, sans-serif;
 
-    border-bottom: 1px solid #ddd;
+      color: #fff;
 
-    border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
 
-    box-shadow: 0 3px 2px -2px rgba(200,200,200,0.2);
+      box-shadow: 0 3px 2px -2px rgba(200,200,200,0.2);
 
-    position: relative;
+      position: relative;
 
-    box-sizing: border-box;
+      box-sizing: border-box;
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
 
-    align-items: center;
+      align-items: center;
 
-    justify-content: center;
+      justify-content: center;
 
-    background-color: #273647;
+      background-color: #273647;
 
-    // IE10 Consumer Preview
-    background-image: -ms-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
-    // Mozilla Firefox
-    background-image: -moz-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
-    // Opera
-    background-image: -o-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
-    // Webkit (Safari/Chrome 10)
-    background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #2F4358), color-stop(1, #263648));
-    // Webkit (Chrome 11+)
-    background-image: -webkit-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
-    // W3C Markup, IE10 Release Preview
-    background-image: radial-gradient(circle farthest-side at center, #2F4358 0%, #263648 100%);
+      // IE10 Consumer Preview
+      background-image: -ms-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
+      // Mozilla Firefox
+      background-image: -moz-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
+      // Opera
+      background-image: -o-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
+      // Webkit (Safari/Chrome 10)
+      background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #2F4358), color-stop(1, #263648));
+      // Webkit (Chrome 11+)
+      background-image: -webkit-radial-gradient(center, circle farthest-side, #2F4358 0%, #263648 100%);
+      // W3C Markup, IE10 Release Preview
+      background-image: radial-gradient(circle farthest-side at center, #2F4358 0%, #263648 100%);
 
-    background-image: url('../assets/lp_header/lp_background.jpg');
+      background-attachment: fixed;
 
-    background-repeat: no-repeat;
+      background-repeat: no-repeat;
 
-    background-position: center top;
 
-    height: 100vh;
+      height: 100vh;
 
-  }
+      min-height:500px;
 
-}
+    }
 
-.temp_lp_content {
 
-  .description {
-    text-align: center;
-    margin-top: 15px;
-    letter-spacing: 0px;
-    font-size: 56px;
-    font-weight: bolder;
-    line-height:1;
-    margin-bottom:1rem;
-  }
+    .block_1 {
 
-  .small {
-    text-align: center;
-    letter-spacing: 0px;
-    font-size: 28px;
-    margin-bottom: 2rem;
-  }
+      background-image: url('../assets/lp_header/lp_background.jpg');
 
-  a { color: #fff; }
+      background-position: center center;
+
+      background-size:cover;
+
+
+      .temp_lp_content {
+
+        text-align: center;
+
+        opacity: 0;
+
+        .btn-ghost {
+
+          font-family: 'Lato', Helvetica, Arial, sans-serif;
+
+          background: transparent;
+
+          color: #ffffff;
+
+          border-color: #ffffff;
+
+          &:hover {
+
+              background: #ffffff;
+              color: #3e3e3e;
+              border-color: #ffffff;
+
+          }
+
+        }
+
+        .cta {
+
+          width: 225px;
+
+          font-size: 2rem;
+
+          line-height: 3rem;
+
+        }
+
+        .description {
+
+          margin-bottom: 4rem;
+
+          letter-spacing: 0px;
+
+          font-size: 5.6rem;
+
+          font-weight: bolder;
+
+          margin-top: 30px;
+
+          line-height:1;
+
+        }
+
+        a { color: #fff; }
+
+      }
+
+    }
+
 
 }

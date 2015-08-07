@@ -3,9 +3,35 @@
 
   {% include head.html %}
 
-  <body class="temp_lp">
+  <body class="temp_lp" id="home">
+
+    <nav class="navbar navbar-default navbar-fixed-top nav-big">
+      <div class="container">
+
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">
+            cery<small>.co</small>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right">
+          <a href="#contact-us" class="btn btn-danger navbar-btn">Sign Up</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right" style="margin-right:30px;">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#learn-more">LEARN MORE</a></li>
+            <li><a href="#contact-us">CONTACT US</a></li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+
+      </div>
+    </nav>
 
     {{ content }}
+
+    {% include footer.html %}
 
   </body>
 </html>
