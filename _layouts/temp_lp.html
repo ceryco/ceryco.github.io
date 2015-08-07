@@ -20,7 +20,7 @@ layout: compress
         </div>
 
         <div class="collapse navbar-collapse navbar-right">
-          <a href="#contact-us" class="btn btn-danger navbar-btn">Sign Up</a>
+          <button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#SignUpModal">Sign Up</button>
         </div>
 
         <div class="collapse navbar-collapse navbar-right" style="margin-right:30px;">
@@ -36,7 +36,9 @@ layout: compress
 
     {{ content }}
 
-    {% include footer.html %}
+  {% include modal_signup.html %}
+
+  {% include footer.html %}
 
   </body>
 </html>

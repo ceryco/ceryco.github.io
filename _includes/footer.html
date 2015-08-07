@@ -4,34 +4,33 @@
 <script type='text/javascript' src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js'></script>
 <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.carousel.min.js'></script>
-<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
 <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
 <script type='text/javascript' src="//cdn.rawgit.com/Yappli/smooth-scroll/main/smooth-scroll.min.js"></script>
+<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 
 <script type="text/javascript">
 
-    function init() {
+    $(document).ready(function () {
+
         window.addEventListener('scroll', function(e) {
             var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                    shrinkOn = 400,
-                    header = document.querySelector("nav");
+                    shrinkOn = 400;
 
             if (distanceY > shrinkOn) {
-                classie.remove(header, "nav-big");
+                $('.navbar-fixed-top').removeClass("nav-big");
             } else {
-                if (!classie.has(header, "nav-big")) {
-                    classie.add(header, "nav-big");
-                }
+                $('.navbar-fixed-top').addClass("nav-big");
             }
 
         });
-    }
 
-    window.onload = init();
+        $('.form-contact').each(function() {
+            $(this).validate();
+        });
 
-    skrollr.init();
+        skrollr.init();
 
-    $(".form-contact").validate();
+    });
+
 
 </script>
