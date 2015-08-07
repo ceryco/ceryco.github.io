@@ -33,27 +33,22 @@ a:hover   { text-decoration: underline; }
   zoom: 1;
 }
 
-
-
-
-/*
-    these are just the default styles used in the Cycle2 demo pages.
-    you can use these styles or any others that you wish.
-*/
-
-
-
 .cycle-slideshow { height:55px; width: 100%; margin: 10px auto; padding: 0; position: relative; }
 
-/* slideshow images (for most of the demos, these are the actual "slides") */
 .cycle-slideshow img {
-  /*
-  some of these styles will be set by the plugin (by default) but setting them here
-  helps avoid flash-of-unstyled-content
-  */
 
   width: 500px;
   height: auto;
   padding-right:40px;
+
+}
+
+label.error {
+
+  color: #b94a48;
+
+  line-height: 1.5rem;
+
+  font-size: 1.2rem;
 
 }
