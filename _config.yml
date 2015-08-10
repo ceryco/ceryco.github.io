@@ -1,6 +1,6 @@
 name:              Cery
 highlighter:       pygments
-description:       "Management, Optimization and Reporting for SEM Agencies."
+description:       "Management and Reporting for SEM Agencies."
 url:               "http://cery.co"
 
 sass:
